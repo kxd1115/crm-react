@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import './index.scss';
+import './index.css';
 
 import { 
   Layout, 
@@ -26,6 +26,7 @@ import {
   ExceptionOutlined,
   SearchOutlined, WarningOutlined, ExportOutlined
 } from '@ant-design/icons';
+import { clearUserInfo } from '@/store/modules/userStore';
 
 const { Header, Sider, Content } = Layout;
 
@@ -91,6 +92,7 @@ const CRMLayout = ()=> {
   const onConfirm = () => {
     navigate('/login')
     // 清除token
+    dispatch(clearUserInfo());
   };
 
   return (

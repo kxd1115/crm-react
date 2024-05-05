@@ -1,0 +1,87 @@
+
+// 公共CSS样式
+
+.box {
+  width: 100vw;   // 100vw意味着100%的视窗宽度 
+  height: 100vh;  // 100vh意味着100%的视窗高度
+  background-color: rgb(29, 67, 89);
+  .content {
+    .login-wrapper {
+      .h1 {
+        text-align: center;
+      }
+      .login-form {
+        .form-item {
+          margin: 20px 0;
+          span {
+            display: block;
+            margin: 5px 20px;
+            font-weight: 100;
+          }
+          .input-item {
+            width: 100%;
+            border-radius: 40px;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: 200;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .login-btn {
+          width: 100%;
+          border-radius: 40px;
+          color: #fff;
+          border: 0;
+          font-weight: 100;
+          margin-top: 10px;
+          cursor: pointer;
+        }
+      }
+      .divider {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span:nth-child(1) {
+          flex: 1;
+        }
+        span:nth-child(3) {
+          flex: 1;
+        }
+        .line {
+          display: inline-block;
+          max-width: 30%;
+          width: 30%;
+        }
+        .divider-text {
+          // 行内元素的垂直对齐方式
+          vertical-align: middle;
+          margin: 0px 20px;
+          line-height: 0px;
+          display: inline-block;
+          width: 100px;
+        }
+      }
+      .other-login-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .other-login-item {
+        border: 1px solid rgb(214, 222, 228);
+        padding: 10px;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+//  一般大于手机的尺寸样式
+@media(min-width: 767px) {
+  
+}
