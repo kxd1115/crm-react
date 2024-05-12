@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.16",
     "@reduxjs/toolkit": "^2.2.3",
-    "antd": "^5.16.2",
+    "antd": "^5.17.0",
     "axios": "^1.6.8",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.10",

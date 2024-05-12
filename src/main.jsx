@@ -5,10 +5,11 @@ import { RouterProvider } from 'react-router-dom';
 import store from './store';
 import { Provider } from 'react-redux';
 import 'normalize.css';
-import '@/index.css'
+import '@/index.css';
+//import 'antd/dist/reset.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-      <RouterProvider router={router}></RouterProvider>
-    </Provider>
+    <RouterProvider router={router}></RouterProvider>
+  </Provider>
 )

@@ -5,6 +5,7 @@ import { AuthRoute } from "@/components/AuthRoute";
 import CRMLayout from "@/pages/Layout";
 import Login from "@/pages/Login";
 import Test from "@/pages/Test";
+import Test1 from "@/pages/Test1";
 import LoginTest from "@/pages/LoginTest";
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: '/test',
     element: <Test />
+  },
+  {
+    path: '/test1',
+    element: <Test1 />
   }
 ]);
 
